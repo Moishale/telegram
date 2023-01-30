@@ -66,15 +66,15 @@ with open('output/members.csv', 'w', encoding='UTF-8') as f:
         if user.username:
             username = user.username
         else:
-            username = ""
+            username = ''
         if user.first_name:
             first_name = user.first_name
         else:
-            first_name = ""
+            first_name = ''
         if user.last_name:
             last_name = user.last_name
         else:
-            last_name = ""
+            last_name = ''
         name = (first_name + ' ' + last_name).strip()
         writer.writerow([username, user.id, user.access_hash,
                         name, group.title, group.id])
